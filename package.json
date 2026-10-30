@@ -1,0 +1,64 @@
+{
+  "name": "dsh-multi-shell",
+  "version": "0.1.2",
+  "description": "DSH plugin: one model-facing shell tool that runs each command through Git Bash (default), PowerShell, or WSL, chosen per call by the model.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "shell",
+    "terminal",
+    "powershell",
+    "git-bash",
+    "wsl",
+    "windows"
+  ],
+  "license": "MIT",
+  "author": "deepseekv41flash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepseekv41flash/dsh-multi-shell.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepseekv41flash/dsh-multi-shell/issues"
+  },
+  "homepage": "https://github.com/deepseekv41flash/dsh-multi-shell#readme",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./shells": "./lib/shells.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README-en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-sandbox": "*",
+    "@deepseek-ai/dsh-shell": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/shells.test.mjs",
+    "check": "bash scripts/check.sh",
+    "prepublishOnly": "npm run check && npm test"
+  }
+}

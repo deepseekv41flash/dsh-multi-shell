@@ -1,0 +1,8 @@
+# dsh-multi-shell bundle layer — inserted automatically when a profile lists
+# this package in dsh.profile.bundles (declared by dsh.bundle.patch).
+#
+# The row id is stable: a profile patch can target it later (for example to
+# override `config`, or to disable the tool without uninstalling the package).
+- insert:
+    - id: tool-multi-shell
+      name: 'dsh-multi-shell'

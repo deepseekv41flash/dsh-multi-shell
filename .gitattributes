@@ -1,0 +1,2 @@
+# Keep every text file LF so the package hash is stable across Windows checkouts.
+* text=auto eol=lf
