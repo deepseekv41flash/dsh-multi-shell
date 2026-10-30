@@ -90,7 +90,7 @@ MSYS_NO_PATHCONV=1 sudo --disable-input pwsh -NoProfile -NonInteractive -Command
 ## 安装 / 回滚
 
 本体是**纯 ESM、零构建**的包：`package.json` + `lib/` + `cordis.patch.yml` 即可运行。
-npm：`dsh-multi-shell`（https://www.npmjs.com/package/dsh-multi-shell）。
+npm：`dsh-multi-shell`（ https://www.npmjs.com/package/dsh-multi-shell ）。
 
 从 npm 安装到某个 profile（把包加进该 profile 并登记到 bundles，重启 DSH 后生效）：
 
