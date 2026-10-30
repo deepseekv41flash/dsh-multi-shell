@@ -2,6 +2,7 @@
 
 [English](README-en.md) · [简体中文](README.md)
 
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/deepseekv41flash/dsh-multi-shell)
 [![npm](https://img.shields.io/npm/v/dsh-multi-shell.svg)](https://www.npmjs.com/package/dsh-multi-shell)
 [![license](https://img.shields.io/npm/l/dsh-multi-shell.svg)](./LICENSE)
 
